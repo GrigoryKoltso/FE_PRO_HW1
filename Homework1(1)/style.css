@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    height: 100px;
+    position: relative;
+}
+
+.logo-container {
+    margin-left: -110px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.list-container {
+    margin-left: 100px;
+    margin-right: 50px;
+    display: flex;
+    width: 600px;
+}
+
+header>.list-container>p {
+    margin-left: 10px;
+    color: var(--Text-color, #222);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 30px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.firmname {
+    margin-left: 30px;
+    width: 190px;
+    height: 43px;
+}
+
+.button-connect {
+    background: transparent;
+    border-radius: 20px;
+    width: 151px;
+    height: 35px;
+    font-family: Lato;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+
+/* мэйн контент */
+main {
+    display: grid;
+    justify-items: center;
+    background: #EBEBEB;
+    width: auto;
+    height: 1200px;
+}
+
+.title-container {
+    width: 75%;
+    height: 200px;
+    margin: 200px 0px 0px -65px;
+}
+
+h1 {
+    padding-top: 25px;
+    width: 663px;
+    height: 47px;
+    flex-shrink: 0;
+    color: var(--333333, #333);
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 144.555%;
+}
+
+h5 {
+    width: 445px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--bdbdbd, #BDBDBD);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 138%;
+}
+
+.main-container {
+    width: 80%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+
+.img-container {
+    position: relative;
+    min-height: 350px ;
+    max-width: 350px;
+    max-height: 350px;
+    background: url(./images/Rectangle\ 2\ \(1\).png) lightgray 50% / cover no-repeat;
+    overflow: hidden;
+}
+
+.img-container:hover {
+    background: linear-gradient(0deg, rgba(0, 95, 163, 0.85) 0%, rgba(0, 95, 163, 0.85) 100%), url(./images/Rectangle\ 2\ \(1\).png) lightgray 50% / cover no-repeat;
+}
+
+
+button {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    width: 173px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-family: Lato;
+}
+
+h4 {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 126%;
+    color: rgb(233, 225, 225);
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+/* подвал */
+
+footer {
+    margin-top: 100px;
+    display: grid;
+    justify-items: center;
+    /* background: #EBEBEB; */
+    width: auto;
+    height: 500px;
+}
+
+.foot-container {
+    width: 75%;
+    display: grid;
+    gap: 30px; 
+    grid-template-columns: minmax(270px, 2fr) minmax(200px, 1fr) minmax(200px, 1fr);
+
+}
+
+h3 {
+    color: var(--Accent, #005FA3);
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 144.555%;
+}
+
+h2{
+    color: var(--333333, #333);
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 144.555%;
+}
+
+
+.foot-info-container {
+    background: #EBEBEB;
+    position: relative;
+    
+}
+
+.readmore {
+    color: rgb(157, 138, 138) ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+h6 {
+    position: absolute;
+    left: 45px;
+    width: 75px;
+    height: 54px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+.sale-info {
+    position: absolute;
+    left: 15px;
+    top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132%;
+}
+
+.kolumn1 {
+    margin-left: -30px;
+}
+
+.kolumn2 {
+    margin-left: -60px;
+}
